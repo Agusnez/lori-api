@@ -1,4 +1,6 @@
 {
+    "elastic_server_ip": "192.168.2.3",
     "client_name": "client1",
-    "filepath": "eve.json"
+    "filepath": "eve.json",
+    "log_filepath": "logs/lori.log"
 }
