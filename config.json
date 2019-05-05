@@ -2,5 +2,10 @@
     "elastic_server_ip": "192.168.2.3",
     "client_name": "client1",
     "filepath": "eve.json",
-    "log_filepath": "logs/lori.log"
+    "log_filepath": "logs/lori.log",
+    "lori_username": "lori",
+    "lori_password": "123456",
+    "cert_path": "ca.crt",
+    "reject_unauthorized": false,
+    "time_retrieval": 5000
 }
