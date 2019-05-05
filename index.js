@@ -16,6 +16,9 @@ setInterval(function () {
                 if (!err && data.length > 0) {
                     var username = config.lori_username
                     var password = config.lori_password
+                    if (config.reject_unauthorized) {
+                        var cert = fs.readFileSync(config.cert_path)
+                    }
                     var auth = 'Basic ' + Buffer.from(username + ':' + password).toString('base64')
                     const alerts = data.split('\n').reverse().slice(1).reverse()
                     var body = ''
@@ -34,7 +37,7 @@ setInterval(function () {
                         body: body,
                         rejectUnauthorized: config.reject_unauthorized,
                         agentOptions: {
-                            ca: fs.readFileSync(config.cert_path)
+                            ca: cert
                         }
                     }, function (error, response) {
                         if (response) {
