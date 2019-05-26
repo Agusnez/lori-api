@@ -28,7 +28,7 @@ setInterval(function () {
                     }
                     body += '\n'
                     request({
-                        url: "https://" + config.elastic_server_ip + ":9200/lori/" + config.client_name + "/_bulk",
+                        url: "https://" + config.elastic_server_ip + ":9200/lori_" + config.client_name + "/lori/_bulk",
                         method: "POST",
                         headers: {
                             "Authorization": auth,
