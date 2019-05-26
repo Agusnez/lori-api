@@ -3,8 +3,8 @@
     "client_name": "tfg",
     "filepath": "eve.json",
     "log_filepath": "logs/lori.log",
-    "lori_username": "lori",
-    "lori_password": "123456",
+    "lori_username": "username",
+    "lori_password": "password",
     "cert_path": "ca.crt",
     "reject_unauthorized": false
 }
